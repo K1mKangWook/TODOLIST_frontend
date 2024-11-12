@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 할 일</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+
+    </script>
+</head>
+<body>
+    <div id="main_box">
+        <div id="head_box">
+            TODO LIST
+        </div>
+
+        <div id="input_box">
+            <div id="left">
+                <input type="text" name="" id="input_todo" placeholder="할 일 추가하기" onkeyup="enterkey()">
+            </div>
+
+            <div id="right">
+                <div id="submit" onmouseover="MouseOntheSubmit(this)" onclick="clickSubmit()">Submit</div>
+            </div>
+        </div>
+
+        <div id="content_box">
+            <ul id="todo_list">
+            </ul>
+
+            <script src="function.js"></script>
+        </div>
+        <div id="bottom_box">
+            <div id="delete_all" onmouseover="MouseOntheSubmit(this)" onclick="deleteAll()">전체 삭제</div>
+        </div>
+    </div>
+    <script src="function.js"></script>
+    <div id="detail">
+        <div id="detail_head">사용 설명서</div>
+        <div id="detail_body" style="padding: 10px;">
+            <div style="font-size: 23px; font-weight: 800; margin-top: 2px;">1. 할 일을 추가하고 싶으면 Enter키 Or Submit버튼 누르기</div>
+            <div style="font-size: 23px; font-weight: 800; margin-top: 4px">2. 할 일을 삭제하고 싶으면 더블 클릭하기</div>
+            <div style="font-size: 23px; font-weight: 800; margin-top: 4px;">3. 할 일을 모두 삭제하고 싶으면 전체 삭제 버튼 누르기</div>
+        </div>
+    </div>
+</body>
+</html>
